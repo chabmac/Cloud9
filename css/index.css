@@ -15,23 +15,14 @@
 
 h1 {
   font-family: h1font;
-  position: absolute;
-  z-index: 5;
-  margin-left: 15%;
-  margin-top: 290px;
-  color: white;
   font-size: 80px;
 }
 
 h3 {
   font-family: navfont;
-  position: absolute;
-  z-index: 5;
-  margin-left: 20%;
-  margin-top: 380px;
-  color: white;
   letter-spacing: 3px;
   font-size: 30px;  
+  padding-top: 5px;
 }
 
 /*--------------------------------------*/
@@ -40,11 +31,12 @@ h3 {
 
 nav {
   padding-top: 30px;
-  height: 100px;
+  height: 70px;
   width: 100%;
   position: fixed;
   z-index: 10;
   background-color: #12763c;
+  top: 0;
 }
 
 ul {
@@ -53,7 +45,7 @@ ul {
 
 ul li {
   float: left;
-  min-width: 100px;
+  min-width: 104px;
 }
 
 ul li a {
@@ -65,7 +57,7 @@ ul li a {
   font-family: navFont;
   padding: 16.5px;
   text-align: center;
-  font-size: 0.938em;
+  font-size: 1em;
   letter-spacing: 3px;
 }
 
@@ -88,8 +80,8 @@ ul li a {
 .nav-bottom {
   float: right;
   text-align: right;
-  margin-top: -1px;
-  margin-right: 30px;
+  margin-top: -3px;
+  margin-right: 24px;
 }
 
 .nav-top {
@@ -108,7 +100,7 @@ ul li a {
   font-family: navFont;
   padding: 16.5px;
   text-align: center;
-  font-size: 0.938em;
+  font-size: 1em;
   letter-spacing: 3px;
 }
 
@@ -137,25 +129,88 @@ ul li a {
 #content-wrapper {
   width: 100%;
   margin: 0 auto;
-  position: relative;
 }
 
-.hero img {
-  width: 100%;  
-  margin-top: 75px;
-  position: absolute;
-  display: block;
-  z-index: 1;
+.hero {
+  background-image: url(../images/index-hero.png);
+  height: 550px;
+  box-sizing: border-box;
+  background-size: cover;
+  padding-top: 21%;
+  background-repeat: no-repeat;
 }
 
-.box2 {
+.hero-verbiage {
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, .7);
+}
+  
+.about {
   width: 100%;
-  color: black;
-  height: 500px;
-  margin-top: 200px;
-  position: absolute;
-  display: block;
-  z-index: 1;
+  background-color: #dac69b;
+  height: 400px;
+  box-sizing: border-box;
+  background-size: cover;
+  padding-top: 11%
+}
+
+.about-verbiage {
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+}
+
+.activities {
+  background-image: url(../images/index-activities.png);
+  height: 480px;
+  box-sizing: border-box;
+  background-size: cover;
+  padding-top: 14%;
+  background-repeat: no-repeat;
+}
+
+.activities-verbiage {
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, .7);
+}
+
+.locations {
+  width: 100%;
+  background-color: black;
+  height: 400px;
+  box-sizing: border-box;
+  background-size: cover;
+  padding-top: 11%
+}
+
+.locations-verbiage {
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  color: #dac69b;
+}
+
+.pricing {
+  width: 100%;
+  background-color: white;
+  height: 480px;
+  box-sizing: border-box;
+  background-size: cover;
+  padding-top: 14%
+}
+
+.pricing-verbiage {
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  color: #12763c;
 }
 
 /*--------------------------------------*/
@@ -167,7 +222,7 @@ ul li a {
   padding-top: 50px;
   height: 100px;
   text-align: center;
-  background-color: black;
+  background-color: #12763c;
 }
 
 .footer-links {
@@ -176,16 +231,17 @@ ul li a {
   margin-top: -40px;
 }
 
-a {
-  color: #cc0c2f;
-  text-transform: uppercase;
+.footer-links a {
+  color: white;
+/*  text-transform: uppercase;*/
   text-decoration: none;
-  font-size: 14px;
-  font-family: Verdana, Geneva, sans-serif;
+  font-size: 1em;
+  letter-spacing: 3px;
+  font-family: navfont;
 }
 
 a:hover {
-  color: #ca8f42;
+  color: #dac69b;
 }
 
 /*--------------------------------------*/
