@@ -1,0 +1,141 @@
+h1 {
+  color: black;
+  font-family: Univers;
+  font-size: 400%;
+  margin-left: 0 auto;
+  text-align: center;
+}
+
+ul li {
+  color: white;
+  font-family: Univers;
+  font-size: 32px;
+  text-align: center;
+  margin-left: 0 auto;
+  background-color: black;
+  box-sizing: border-box;
+  width: 100%;
+  border-color: #4CAF50;
+  padding: 10px; 
+  display: inline; 
+}
+
+#menu {
+  display: inline;
+}
+
+li:hover {
+  background-color: #202dd4; 
+}
+
+/*IMAGE SLIDER*/
+.container {
+  max-width: 700px;
+  background-color: black;
+  margin: 0 auto;
+  margin-top: 100px;
+  position: relative;
+}
+.container div {
+  background-color: black;
+  width: 100%;
+  display: inline-block;
+  display: none;
+  padding: 10px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  margin: 180px auto;
+  outline: none;
+  border: none;
+}
+
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #202dd4; /* Blue */
+  transform: translateY(4px);
+}
+
+.next {
+  right: 100px;
+  width: 8em;
+}
+
+.prev {
+  left: 100px;
+}
+
+.explanation {
+  margin-top: 100px;
+}
+/*IMAGE SLIDER*/
+
+.selector {
+  border-radius: 130px;
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+
+}
+
+.selector:hover {
+  background-color: #4CAF50; /* Blue */
+}
+
+#hiking {
+  background-image: url(Images/hiking_button.png);
+}
+
+#climbing {
+  background-image: url(Images/climbing_button.png);
+}
+#fishing {
+  background-image: url(Images/fishing_button.png);
+}
+#camping {
+  background-image: url(Images/camping_button.png);
+}
+#biking {
+  background-image: url(Images/biking_button.png);
+}
+#rafting {
+  background-image: url(Images/rafting_button.png);
+}
+
+.container2 {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.subcontainer2 {
+  width: 68%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+/*#slider {
+    opacity:1;
+    transition: opacity 1s; 
+}
+
+#slider.fadeOut {
+    opacity:0;*/
+}
+/*IMAGE SLIDER*/
