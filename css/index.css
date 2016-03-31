@@ -162,7 +162,7 @@ h3 {
   height: 550px;
   box-sizing: border-box;
   background-size: cover;
-  padding-top: 21%;
+  padding-top: 25%;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -181,7 +181,7 @@ h3 {
   height: 400px;
   box-sizing: border-box;
   background-size: cover;
-  padding-top: 11%
+  padding-top: 13%;
 }
 
 .about-verbiage {
@@ -196,7 +196,7 @@ h3 {
   height: 480px;
   box-sizing: border-box;
   background-size: cover;
-  padding-top: 14%;
+  padding-top: 18%;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -215,7 +215,7 @@ h3 {
   height: 400px;
   box-sizing: border-box;
   background-size: cover;
-  padding-top: 11%
+  padding-top: 13%;
 }
 
 .locations-verbiage {
@@ -230,7 +230,7 @@ h3 {
   height: 480px;
   box-sizing: border-box;
   background-size: cover;
-  padding-top: 14%;
+  padding-top: 18%;
   background-repeat: no-repeat;
   background-attachment: fixed;  
 }
@@ -394,7 +394,7 @@ h3 {
   height: 300px;
   box-sizing: border-box;
   background-size: cover;
-  padding-top: 11%
+  padding-top: 11%;
 }
 
 .about-verbiage {
@@ -428,7 +428,7 @@ h3 {
   height: 300px;
   box-sizing: border-box;
   background-size: cover;
-  padding-top: 11%
+  padding-top: 11%;
 }
 
 .locations-verbiage {
@@ -512,7 +512,7 @@ h3 {
 
 .nav-wrapper ul {
   width: 125%;
-  margin-top: 19px;
+/*  margin-top: 19px;*/
   margin-right: -45px;
 }
 
@@ -549,7 +549,6 @@ h3 {
   display: block;
 }
 
-
 /*_________________________________*/
 
 .hero {
@@ -576,7 +575,7 @@ h3 {
   height: 250px;
   box-sizing: border-box;
   background-size: cover;
-  padding-top: 8%
+  padding-top: 8%;
 }
 
 .about-verbiage {
@@ -610,7 +609,7 @@ h3 {
   height: 250px;
   box-sizing: border-box;
   background-size: cover;
-  padding-top: 18%
+  padding-top: 18%;
 }
 
 .locations-verbiage {
