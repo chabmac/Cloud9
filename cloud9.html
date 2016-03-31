@@ -1,70 +1,145 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8" />
-	<title>Cloud 9 - Homepage</title>	
-    <link rel="stylesheet" type="text/css" href="cloud9.css">
-</head>
-<body>
-<h1>ACTIVITIES</h1>
-	<!-- <ul style="list-style-type:none" id="menu">
-  		<li><a href="#HIKING">HIKING</a></li>
-  		<li>ROCK CLIMBING</li>
- 		<li>FISHING</li>
- 		<li>CAMPING</li>
-  		<li>MOUNTAIN BIKING</li>
- 		<li>WHITE WATER RAFTING</li>
-	</ul> -->
+	<head>
+    <title>Activities</title>
 
-<!-- IMAGE SLIDER -->
-	<section class="demo">
-  		<button class="next">Next</button>
-  		<button class="prev">Previous</button>
-  		<!-- <section id="slider"> -->
-		  <div class="container">
-		    <div style="display: inline-block;">
-		      <img src="Images/Slider-Images/franconia-1.png" width="700" height="365" />
-		    </div>
-		    <div>
-		      <img src="Images/Slider-Images/franconia-2.png" width="700" height="365" />
-		    </div>
-		    <div>
-		      <img src="Images/Slider-Images/franconia-3.png" width="700" height="365" />
-		    </div>
-		    <div>
-		      <img src="Images/Slider-Images/franconia-4.png" width="700" height="365" />
-		    </div>
-		    <div>
-		      <img src="Images/Slider-Images/franconia-5.png" width="700" height="365" />
-		    </div>
-		    <div>
-		      <img src="Images/Slider-Images/franconia-6.png" width="700" height="365" />
-		    </div>
-		    <div>
-		      <img src="Images/Slider-Images/franconia-7.png" width="700" height="365" />
-		    </div>
-		    <div>
-		      <img src="Images/Slider-Images/franconia-8.png" width="700" height="365" />
-		    </div>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/cloud9.css">
+	</head>
+
+  <body>
+
+  <!-- _____________________________ *** NAV BAR *** _____________________________ -->  
+
+    <nav>
+      <img class="logo" src="images/nav-logo.svg">
+
+      <ul class="nav-top">
+        <li>Office Hours: Mon - Fri  9am - 5pm</li>
+        <li>Customer Service: 1-800-555-5555</li>
+      </ul>
+
+      <div class="nav-wrapper">
+        <ul class="nav-bottom">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="cloud9.html">Activities</a></li>
+          <li><a href="#">Locations</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#">Account</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-line"></div>
+    </nav>
+
+  <!-- __________________________ *** MAIN BODY CONTENT *** __________________________ -->    
+
+    <div id="content-wrapper">
+      <div class="hero" data-stellar-background-ratio="0.5">
+        <div class="hero-verbiage">
+          <h1>WHAT DO YOU WANT TO DO?</h1>
+          <h3>Take the first step. It's a wild ride. </h3>
+	      <div class="subcontainer2">
+				<a href="#hiking-section"> <div class="selector" id="hiking"></div></a>
+				<a href="#climbing-section"> <div class="selector" id="climbing"></div></a>
+				<a href="#fishing-section"> <div class="selector" id="fishing"></div></a>
+				<a href="#camping-section"> <div class="selector" id="camping"></div></a>
+				<a href="#biking-section"> <div class="selector" id="biking"></div></a>
+				<a href="#rafting-section"> <div class="selector" id="rafting"></div></a>
 		  </div>
-		</section> 
-	</section>
-<!-- IMAGE SLIDER -->
+        </div>
+      </div>  
+    </div>
+
+      <div class="hiking" id="hiking-section">
+        <div class="hiking-verbiage">
+          <h1>HIKING</h1>
+          <h3></h3>
+        </div>
+      </div>
+
+      <div class="climbing" id="climbing-section" data-stellar-background-ratio="0.5">
+        <div class="climbing-verbiage">
+          <h1>CLIMBING</h1>
+          <h3></h3>
+        </div>
+      </div>
+
+     <div class="fishing" id="fishing-section">
+        <div class="fishing-verbiage">
+          <h1>FISHING</h1>
+          <h3></h3>
+        </div>
+      </div>      
+
+     <div class="camping" id="camping-section" data-stellar-background-ratio="0.5">
+        <div class="camping-verbiage">
+          <h1>CAMPING</h1>
+          <h3></h3>
+        </div>
+      </div> 
+
+     <div class="biking" id="biking-section">
+        <div class="biking-verbiage">
+          <h1>BIKING</h1>
+          <h3></h3>
+        </div>
+      </div>      
+
+     <div class="rafting" id="rafting-section" data-stellar-background-ratio="0.5">
+        <div class="rafting-verbiage">
+          <h1>RAFTING</h1>
+          <h3></h3>
+        </div>
+      </div>   
+
+    </div>
+
+  <!-- __________________________ *** FOOTER *** _____________________________ -->    
+
+    <div id="footer">
+
+      <span>
+        <div class="footer-links">
+         <a href="#" target="blank">Home</a>
+        </div>
+
+        <div class="footer-links">
+          <a href="#" target="blank">About</a>
+        </div>
+
+        <div class="footer-links">
+          <a href="#" target="blank">Activities</a>
+        </div>
+
+        <div class="footer-links">
+          <a href="#" target="blank">Locations</a>
+        </div>
+
+        <div class="footer-links">
+          <a href="#">Pricing</a>
+        </div>
+
+        <div class="footer-links">
+          <a href="#">Account</a>
+        </div>
+      </span>      
+
+    </div> 
+
+  <!-- __________________________ *** JAVASCRIPT *** __________________________ -->  
 	
-	<h1>WHAT DO YOU WANT TO DO?</h1>
-	<div class="container2">
-		<div class="subcontainer2">
-			<div class="selector" id="hiking"></div>
-			<div class="selector" id="climbing"></div>
-			<div class="selector" id="fishing"></div>
-			<div class="selector" id="camping"></div>
-			<div class="selector" id="biking"></div>
-			<div class="selector" id="rafting"></div>
-		</div>
-	</div>
 	
 
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="cloud9.js"></script>
-</body>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script>
+      $.stellar();
+    </script>
+
+  </body>
 </html>
