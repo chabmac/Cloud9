@@ -3,23 +3,36 @@
 	<head>
     <title>Hiking Tours</title>
 
+    <link rel="icon" type="image/png" href="images/tab-icon.png"/> 
+
     <link rel="stylesheet" type="text/css" href="css/reset.css">
+
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">    
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/index.css">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <script src="js/jquery.stellar.min.js"></script>
+
+    <script src="js/mobile.js"></script>
+
 	</head>
 
   <body>
 
-  <!-- _____________________________ *** NAV BAR *** _____________________________ -->  
+  <!-- _____________________________ *** NAV BAR - DESKTOP *** _____________________________ -->  
 
-    <nav>
+    <nav class="nav-desktop">
       <img class="logo" src="images/nav-logo.svg">
+
+      <img class="hamburger handle" src="images/hamburger.svg">
 
       <ul class="nav-top">
         <li>Office Hours: Mon - Fri  9am - 5pm</li>
-        <li>Customer Service: 1-800-555-5555</li>
+        <li>Customer Service: 1-800-555-5555<li>
       </ul>
 
       <div class="nav-wrapper">
@@ -60,28 +73,24 @@
         </div>
       </div>
 
-     <div class="locations">
+      <div class="locations">
         <div class="locations-verbiage">
           <h1>Locations</h1>
           <h3>Blah, blah, blah.</h3>
         </div>
       </div>      
 
-     <div class="pricing" data-stellar-background-ratio="0.5">
+      <div class="pricing" data-stellar-background-ratio="0.5">
         <div class="pricing-verbiage">
           <h1>Pricing</h1>
           <h3>Pay up or hit the bricks.</h3>
         </div>
       </div>  
-
-
-
     </div>
 
   <!-- __________________________ *** FOOTER *** _____________________________ -->    
 
     <div id="footer">
-
       <span>
         <div class="footer-links">
          <a href="#" target="blank">Home</a>
@@ -106,17 +115,8 @@
         <div class="footer-links">
           <a href="#">Account</a>
         </div>
-      </span>      
-
-    </div> 
-
-  <!-- __________________________ *** JAVASCRIPT *** __________________________ -->  
-
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script>
-      $.stellar();
-    </script>
+      </span>
+    </div>   
 
   </body>
 </html>

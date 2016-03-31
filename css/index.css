@@ -1,3 +1,9 @@
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+
+/* Viewport - DESKTOP */
 
 /*--------------------------------------*/
 
@@ -29,7 +35,7 @@ h3 {
 
 /* nav bar */
 
-nav {
+.nav-desktop {
   padding-top: 30px;
   height: 70px;
   width: 100%;
@@ -39,16 +45,37 @@ nav {
   top: 0;
 }
 
-ul {
+.nav-desktop ul {
   list-style-type: none;
 }
 
-ul li {
+.nav-desktop ul li {
   float: left;
   min-width: 104px;
+  display: inline-block;
 }
 
-ul li a {
+.nav-desktop ul li a {
+  display: block;
+  background-color: #12763c;
+  color: white;
+/*  text-transform: uppercase;*/
+  text-decoration: none;
+  font-family: navFont;
+  padding: 16.5px;
+  text-align: center;
+  font-size: 1em;
+  letter-spacing: 3px;
+}
+
+.nav-top {
+  float: right;
+  text-align: right;
+  margin-top: -25px;
+  margin-right: -100px;
+}
+
+.nav-top li {
   display: block;
   background-color: #12763c;
   color: white;
@@ -66,12 +93,6 @@ ul li a {
   color: white;
 }
 
-.nav-bottom li a:hover {
-  color: #12763c;
-  background-color: white;
-  text-decoration: none;
-}
-
 .nav-wrapper {
   float: right; 
   width: 100%;
@@ -81,27 +102,19 @@ ul li a {
   float: right;
   text-align: right;
   margin-top: -3px;
-  margin-right: 24px;
+  margin-right: 31px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.4s;
+  -ms-transition: max-height 0.4s;
+  -moz-transition: max-height 0.4s;
+  -o-transition: max-height 0.4s;
+  transition: max-height 0.4s;
 }
 
-.nav-top {
-  float: right;
-  text-align: right;
-  margin-top: -25px;
-  margin-right: 30px;
-}
-
-.nav-top li {
-  display: block;
-  background-color: #12763c;
-  color: white;
-/*  text-transform: uppercase;*/
+.nav-bottom li a:hover {
+  color: #12763c;
+  background-color: white;
   text-decoration: none;
-  font-family: navFont;
-  padding: 16.5px;
-  text-align: center;
-  font-size: 1em;
-  letter-spacing: 3px;
 }
 
 .nav-line {
@@ -120,6 +133,19 @@ ul li a {
   width: 130px;
   position: fixed;
   z-index: 20;
+}
+
+.handle {
+  width: 113%;
+  float: right;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: white;
+  display:none !important;
+}
+
+.hamburger {
+  display:none !important;
 }
 
 /*--------------------------------------*/
@@ -249,21 +275,385 @@ a:hover {
 }
 
 /*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
 
-/* misc styles */
+/* Viewport - TABLET */
 
-.spacer {
+@media all and (max-width: 800px) {
+h1 {
+  font-family: h1font;
+  font-size: 80px;
+}
+
+h3 {
+  font-family: navfont;
+  letter-spacing: 3px;
+  font-size: 30px;  
+  padding-top: 5px;
+}
+
+.nav-desktop {
+  padding-top: 27px;
+  height: 70px;
   width: 100%;
-  height: 50px;
+  position: fixed;
+  z-index: 10;
+  background-color: #12763c;
+  top: 0;
 }
 
-@media screen and (max-width:680px){
-ul li a, .nav-top li {font-size: 0.8rem}
+.nav-desktop ul li {
+  float: left;
+  min-width: 86px;
 }
 
-@media screen and (max-width:540px){
-ul li a, .nav-top li {font-size: 0.7rem}
+.nav-desktop ul li a {
+  display: block;
+  background-color: #12763c;
+  color: white;
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  font-family: navFont;
+  padding: 16.5px;
+  text-align: center;
+  font-size: 1em;
+  letter-spacing: 3px;
 }
+
+.nav-top {
+  float: right;
+  text-align: right;
+  margin-top: -8px;
+  margin-right: -124px;
+}
+
+.nav-top li {
+  display: block;
+  background-color: #12763c;
+  color: white;
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  font-family: navFont;
+  padding: 0.5px;
+  text-align: center;
+  font-size: 1em;
+  letter-spacing: 3px;
+  padding-right: 25px;
+}
+
+.nav-bottom {
+  float: right;
+  text-align: right;
+  margin-top: 12px;
+  margin-right: -4px;
+}
+
+.nav-line {
+  margin-top: 21px;
+  margin-left: 160px;
+  height: 2px;
+  width: 1500px;
+  position: fixed;
+  z-index: 10;
+  background-color: white;
+}
+
+.logo {
+  margin-top: -18px;
+  margin-left: 15px;
+  width: 121px;
+  position: fixed;
+  z-index: 20;
+}
+
+/*_________________________________*/
+
+.hero {
+  background-image: url(../images/index-hero.png);
+  height: 500px;
+  box-sizing: border-box;
+  background-size: cover;
+  padding-top: 27%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero-verbiage {
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, .7);
+}
+  
+.about {
+  width: 100%;
+  background-color: #dac69b;
+  height: 300px;
+  box-sizing: border-box;
+  background-size: cover;
+  padding-top: 11%
+}
+
+.about-verbiage {
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+}
+
+.activities {
+  background-image: url(../images/index-activities.png);
+  height: 400px;
+  box-sizing: border-box;
+  background-size: cover;
+  padding-top: 20%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.activities-verbiage {
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, .7);
+}
+
+.locations {
+  width: 100%;
+  background-color: black;
+  height: 300px;
+  box-sizing: border-box;
+  background-size: cover;
+  padding-top: 11%
+}
+
+.locations-verbiage {
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  color: #dac69b;
+}
+
+.pricing {
+  background-image: url(../images/index-pricing.png);  
+  height: 400px;
+  box-sizing: border-box;
+  background-size: cover;
+  padding-top: 20%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+}
+
+.pricing-verbiage {
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, .7);
+}
+
+/*_________________________________*/
+
+.footer-links a {
+  color: white;
+/*  text-transform: uppercase;*/
+  text-decoration: none;
+  font-size: 1em;
+  letter-spacing: 3px;
+  font-family: navfont;
+}  
+
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+
+/* Viewport - MOBILE */
+
+@media all and (max-width: 720px) {
+h1 {
+  font-family: h1font;
+  font-size: 60px;
+}
+
+h3 {
+  font-family: navfont;
+  letter-spacing: 3px;
+  font-size: 25px;  
+  padding-top: 5px;
+}
+
+/*_________________________________*/
+
+.nav-desktop {
+  padding-top: 27px;
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  background-color: #12763c;
+  top: 0;
+}
+
+.nav-top {
+  display:none !important;
+}
+
+.nav-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  float: right;
+  text-align: left;
+}
+
+.nav-wrapper ul {
+  width: 125%;
+  margin-top: 19px;
+  margin-right: -45px;
+}
+
+.showing {
+  width: 100%;
+  max-height: 20em;
+}
+
+.nav-bottom {
+  float: right;
+  text-align: right;
+  margin-top: 18px;
+  margin-right: 24px;
+  width: 100%;
+  display: none;
+}
+
+.nav-line {
+  display:none !important;
+}
+
+.logo {
+  margin-top: -22px;
+  margin-left: 10px;
+  width: 88px;
+  position: fixed;
+  z-index: 20;
+}
+
+.hamburger {
+  margin-top: -1%;
+  margin-right: 5%;
+  width: 10%;
+  display: block;
+}
+
+
+/*_________________________________*/
+
+.hero {
+  background-image: url(../images/index-hero.png);
+  height: 400px;
+  box-sizing: border-box;
+  background-size: cover;
+  padding-top: 27%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero-verbiage {
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, .7);
+}
+  
+.about {
+  width: 100%;
+  background-color: #dac69b;
+  height: 250px;
+  box-sizing: border-box;
+  background-size: cover;
+  padding-top: 8%
+}
+
+.about-verbiage {
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+}
+
+.activities {
+  background-image: url(../images/index-activities.png);
+  height: 300px;
+  box-sizing: border-box;
+  background-size: cover;
+  padding-top: 28%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.activities-verbiage {
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, .7);
+}
+
+.locations {
+  width: 100%;
+  background-color: black;
+  height: 250px;
+  box-sizing: border-box;
+  background-size: cover;
+  padding-top: 18%
+}
+
+.locations-verbiage {
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  color: #dac69b;
+}
+
+.pricing {
+  background-image: url(../images/index-pricing.png);  
+  height: 300px;
+  box-sizing: border-box;
+  background-size: cover;
+  padding-top: 25%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+}
+
+.pricing-verbiage {
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, .7);
+}
+
+/*_________________________________*/
+
+#footer {
+  display: block;
+  padding-top: 10px;
+  text-align: center;
+  background-color: #12763c;
+}
+
+.footer-links {
+  display: inline-block;
+  padding: 14px;
+  margin-top: 0px;
+}
+
+   
 
 
 
